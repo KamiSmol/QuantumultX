@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  xuexi:
+    image: techxuexi/techxuexi-amd64:dev53
+    container_name: xuexi
+    restart: unless-stopped
+    volumes:
+       - ./user:/xuexi/user
+    environment:
+      - AccessToken=
+      - Secret=
+      - Pushmode=
+      - CRONTIME=30 6 * * *
