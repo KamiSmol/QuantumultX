@@ -1,13 +1,8 @@
-version: '2.1'
+version: '3'
 services:
-  xuexi:
-    image: techxuexi/techxuexi-amd64:dev53
-    container_name: xuexi
-    restart: unless-stopped
-    volumes:
-       - ./user:/xuexi/user
+  unblockneteasemusic:
+    image: nondanee/unblockneteasemusic
     environment:
-      - AccessToken=
-      - Secret=
-      - Pushmode=
-      - CRONTIME=30 6 * * *
+      NODE_ENV: production
+    ports:
+      - 8080:8080
