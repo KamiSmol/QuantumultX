@@ -1,8 +1,12 @@
 version: '3'
 services:
-  unblockneteasemusic:
-    image: nondanee/unblockneteasemusic
-    environment:
-      NODE_ENV: production
+  clash:
+    image: dreamacro/clash:0.16.0
+    volumes:
+      - ./config.yaml:/root/.config/clash/config.yaml
     ports:
-      - 8080:8080
+      - "7890:7890"
+      - "9090:9090"
+    restart: always
+    network_mode: "host"
+    container_name: clash
