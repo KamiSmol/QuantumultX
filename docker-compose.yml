@@ -1,12 +1,9 @@
 version: '3'
 services:
   clash:
-    image: dreamacro/clash:0.16.0
+    image: dreamacro/clash
     volumes:
       - ./config.yaml:/root/.config/clash/config.yaml
-    ports:
-      - "7890:7890"
-      - "9090:9090"
     restart: always
     network_mode: "host"
     container_name: clash
