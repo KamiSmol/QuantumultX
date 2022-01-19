@@ -1,1 +1,1 @@
-console.log($request.cookie)
+console.log($request)
