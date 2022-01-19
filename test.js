@@ -1,1 +1,1 @@
-console.log($request.headers)
+console.log(JSON.parse($request.headers))
