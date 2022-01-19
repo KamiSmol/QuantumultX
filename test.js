@@ -1,1 +1,1 @@
-console.log($request)
+console.log($request.headers)
