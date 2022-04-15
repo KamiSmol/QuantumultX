@@ -146,7 +146,7 @@ function EnvInfo() {
 	} else {
 		const raw = $request.url;
 		const res = {
-			url: raw.replace(/%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&/g, '&')
+			url: raw.replace(/%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE)&/g, '&')
 		};
 		SwitchRegion(raw).then(() => $done(res));
 	}
