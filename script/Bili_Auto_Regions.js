@@ -49,7 +49,7 @@ Quantumult X 远程脚本配置 :
 ^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key url script-response-body https://raw.githubusercontent.com/KamiSmol/QuanX/main/script/Bili_Auto_Regions.js
 
 #可选, 适用于搜索指定地区的番剧
-^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE)& url script-request-header https://raw.githubusercontent.com/KamiSmol/QuanX/main/script/Bili_Auto_Regions.js
+^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?(%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE)& url script-request-header https://raw.githubusercontent.com/KamiSmol/QuanX/main/script/Bili_Auto_Regions.js
 
 [mitm]
 hostname = ap?.bilibili.com, ap?.biliapi.net
@@ -146,7 +146,7 @@ function EnvInfo() {
 	} else {
 		const raw = $request.url;
 		const res = {
-			url: raw.replace(/%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE)&/g, '&')
+			url: raw.replace(/(%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE)&/g, '&')
 		};
 		SwitchRegion(raw).then(() => $done(res));
 	}
