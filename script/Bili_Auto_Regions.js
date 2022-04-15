@@ -85,7 +85,7 @@ async function SwitchRegion(play) {
 	const current = await $.getPolicy(Group);
 	const area = (() => {
 		let select;
-		if (/\u50c5[\u4e00-\u9fa5]+\u6e2f|%20%E6%B8%AF&|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE/.test(play)) {
+		if (/\u50c5[\u4e00-\u9fa5]+\u6e2f|%20%E6%B8%AF&|%E7%95%AA%E5%89%A7%E5%87%BA%E5%B7%AE&/.test(play)) {
 			const test = /\u50c5[\u4e00-\u9fa5]+\u53f0/.test(play);
 			if (current != HK && (current == TW && test ? 0 : 1)) select = HK;
 		} else if (/\u50c5[\u4e00-\u9fa5]+\u53f0|%20%E5%8F%B0&/.test(play)) {
