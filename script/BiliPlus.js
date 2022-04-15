@@ -11,8 +11,8 @@ async function SwitchRegion(play) {
     const current = await $.getPolicy(Group);
     const area = (() => {
         let select;
-        if (play === -404) {
-            if (current != DF) select = DF;
+        if (/vmid=11783021/.test(play)) {
+            if (current != HK) select = HK;
         } else if (current != CN) {
             select = CN;
         }
