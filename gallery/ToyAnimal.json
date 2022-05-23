@@ -1,0 +1,8 @@
+{
+	"name": "Toy Animal",
+	"description": "This is a sample.",
+	"icons": [{
+		"name": "dinosaur",
+		"url": "https://raw.githubusercontent.com/KamiSmol/QuanX/main/icon/toy_animal/dinosaur.png"
+	}]
+}
