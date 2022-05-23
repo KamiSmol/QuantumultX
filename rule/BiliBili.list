@@ -1,6 +1,10 @@
-HOST-KEYWORD,biliapi,BiliBili
+HOST,api.biliapi.com,BiliBili
+HOST,app.biliapi.com,BiliBili
+HOST,api.biliapi.net,BiliBili
+HOST,app.biliapi.net,BiliBili
 HOST,api.bilibili.com,BiliBili
 HOST,app.bilibili.com,BiliBili
+HOST,grpc.biliapi.net,BiliBili
 HOST,m.bilibili.com,BiliBili
 HOST,upos-hz-mirrorakam.akamaized.net,BiliBili
 HOST,www.bilibili.com,BiliBili
