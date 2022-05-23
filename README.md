@@ -1,1 +1,1 @@
-QuanX自用
+QuantumultX自用
