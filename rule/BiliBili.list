@@ -6,6 +6,6 @@ HOST,api.bilibili.com,BiliBili
 HOST,app.bilibili.com,BiliBili
 HOST,grpc.biliapi.net,BiliBili
 HOST,m.bilibili.com,BiliBili
-HOST,upos-hz-mirrorakam.akamaized.net,BiliBili
 HOST,www.bilibili.com,BiliBili
+HOST,upos-hz-mirrorakam.akamaized.net,BiliBili
 HOST-KEYWORD,cn-hk-eq-bcache-,BiliBili
