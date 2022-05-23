@@ -3,12 +3,12 @@
 	"description": "Designed By KamiSmol.",
 	"icons": [{
 		"name": "dinosaur",
-		"url": "https://raw.githubusercontent.com/KamiSmol/QuanX/main/icon/toy_animal/dinosaur.png"
+		"url": "https://raw.githubusercontent.com/KamiSmol/QuantumultX/main/icon/toy_animal/dinosaur.png"
 	}, {
 		"name": "ufo",
-		"url": "https://raw.githubusercontent.com/KamiSmol/QuanX/main/icon/toy_animal/ufo.png"
+		"url": "https://raw.githubusercontent.com/KamiSmol/QuantumultX/main/icon/toy_animal/ufo.png"
 	}, {
 		"name": "doll",
-		"url": "https://raw.githubusercontent.com/KamiSmol/QuanX/main/icon/toy_animal/doll.png"
+		"url": "https://raw.githubusercontent.com/KamiSmol/QuantumultX/main/icon/toy_animal/doll.png"
 	}]
 }
