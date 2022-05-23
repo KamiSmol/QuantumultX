@@ -1,5 +1,4 @@
-HOST-SUFFIX,biliapi.com,BiliBili
-HOST-SUFFIX,biliapi.net,BiliBili
+HOST-KEYWORD,biliapi,BiliBili
 HOST,api.bilibili.com,BiliBili
 HOST,app.bilibili.com,BiliBili
 HOST,m.bilibili.com,BiliBili
