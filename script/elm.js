@@ -1,4 +1,5 @@
-var body={
+var body = $response.body;
+body={
   "code": "200",
   "data": [{
     "attribute": {
