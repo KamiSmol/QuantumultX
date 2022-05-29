@@ -11,7 +11,7 @@ function convert(body) {
         const options = {
             "url": api,
             "headers": {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json;charset=UTF-8",
                 "timeout": 10000
             },
             body
