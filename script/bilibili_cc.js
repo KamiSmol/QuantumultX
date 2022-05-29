@@ -1,7 +1,11 @@
-const $ = new Env("Bilibili字幕转换");
 let body = $response.body;
-const api = $.getdata('ccApi') || $done({ body });
-console.log(api);
+const $ = new Env("Bilibili字幕转换");
+const url = $.getdata('ccApi') || $done({ body });
+const headers = {
+    "Content-Type": "application/json;charset=UTF-8",
+    "timeout": 10000
+};
+console.log(url);
 !(async () => {
     body = await convert(body);
     $done({ body });
@@ -9,14 +13,7 @@ console.log(api);
 
 function convert(body) {
     return new Promise(async (resolve) => {
-        const options = {
-            "url": api,
-            "headers": {
-                "Content-Type": "application/json;charset=UTF-8",
-                "timeout": 10000
-            },
-            body
-        };
+        const options = { url, headers, body };
         $.post(options, (err, resp, data) => {
             try {
                 if (err) {
