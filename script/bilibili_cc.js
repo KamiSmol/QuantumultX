@@ -1,5 +1,6 @@
 const $ = new Env("Bilibili字幕转换");
 const api = ($.isNode() ? process.env.ccApi : $.getdata('ccApi')) || '';
+console.log(api)
 !(async () => {
     let body = await convert($response.body);
     console.log(body)
@@ -8,7 +9,7 @@ const api = ($.isNode() ? process.env.ccApi : $.getdata('ccApi')) || '';
 function convert(body) {
     return new Promise(async (resolve, reject) => {
         const options = {
-            "url": ccApi,
+            "url": api,
             "headers": {
                 "Content-Type": "application/json",
                 "timeout": 10000
