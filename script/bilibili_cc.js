@@ -2,6 +2,7 @@ const $ = new Env("Bilibili字幕转换");
 const api = ($.isNode() ? process.env.ccApi : $.getdata('ccApi')) || '';
 !(async () => {
     let body = await convert($response.body);
+    console.log(body)
     $done({ body });
 })()
 function convert(body) {
