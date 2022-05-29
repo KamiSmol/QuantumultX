@@ -1,7 +1,8 @@
 const $ = new Env("Bilibili字幕转换");
+let body = $response.body;
 const api = $.getdata('ccApi') || $done({ body });
 !(async () => {
-    let body = await convert($response.body);
+    body = await convert(body);
     $done({ body });
 })();
 
