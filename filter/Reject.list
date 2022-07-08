@@ -1,0 +1,4 @@
+##哔哩哔哩
+HOST,grpc.biliapi.net,REJECT
+##贴吧
+IP-CIDR,180.76.76.200/32,REJECT
